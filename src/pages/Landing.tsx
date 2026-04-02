@@ -5,14 +5,14 @@ import {
   Globe, Shield, Zap, Star
 } from "lucide-react";
 
-// Public folder images
-const logoImg = "/Logo.png";
-const headerImg = "/header.png";
-const searchImg = "/searshing f.png";
-const parkImg = "/parking f.png";
-const returnImg = "/return to car f.png";
-const carsImg = "/manage cars f.png";
-const devPhoto = "/photo2025.jpg";
+// Import images from img folder
+import logoImg from "@img/Logo.png";
+import headerImg from "@img/header.png";
+import searchImg from "@img/searshing f.png";
+import parkImg from "@img/parking f.png";
+import returnImg from "@img/return to car f.png";
+import carsImg from "@img/manage cars f.png";
+import devPhoto from "@img/photo2025.jpg";
 
 function LinkedinIcon({ size = 16 }: { size?: number }) {
   return (
@@ -214,7 +214,7 @@ export default function Landing() {
       <nav className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#0C1220]/90 backdrop-blur-xl border-b border-[#2ECC71]/15 py-3" : "bg-transparent py-5"}`}>
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
           <a href="#hero" className="flex items-center gap-2.5">
-            <img src="img\Logo.png" alt="SpotLot" className="h-9 w-9 object-contain" />
+            <img src={logoImg} alt="SpotLot" className="h-9 w-9 object-contain" />
             <span className="text-[1.25rem] font-black tracking-tight">SpotLot</span>
           </a>
 
@@ -275,7 +275,7 @@ export default function Landing() {
           >
             <div className="flex justify-between items-center mb-10">
               <div className="flex items-center gap-2">
-                <img src="img\Logo.png" alt="SpotLot" className="h-9 w-9 object-contain" />
+                <img src={logoImg} alt="SpotLot" className="h-9 w-9 object-contain" />
                 <span className="text-xl font-black">SpotLot</span>
               </div>
               <button onClick={() => setMenuOpen(false)} data-testid="button-close-menu"><X size={25} /></button>
@@ -369,7 +369,7 @@ export default function Landing() {
           >
             <div className="absolute inset-0 bg-[#2ECC71]/8 blur-[100px] rounded-full pointer-events-none" />
             <motion.img
-              src="img\header.png"
+              src={headerImg}
               alt="SpotLot App Screens"
               whileHover={{ scale: 1.04, rotate: -1 }}
               transition={{ type: "spring", stiffness: 180, damping: 22 }}
@@ -603,7 +603,7 @@ export default function Landing() {
       <footer className="border-t border-[#2ECC71]/10 bg-[#090e18] py-8 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2.5">
-            <img src="img\Logo.png" alt="SpotLot" className="h-8 w-8 object-contain" />
+            <img src={logoImg} alt="SpotLot" className="h-8 w-8 object-contain" />
             <span className="font-black text-white">SpotLot</span>
             <span className="text-[#2ECC71] text-sm font-bold mx-1">·</span>
             <span className="text-[#2ECC71] text-sm font-semibold">Find. Park. Pin.</span>
