@@ -4,13 +4,15 @@ import {
   Menu, X, MapPin, Car, Navigation2, Search, Languages,
   Globe, Shield, Zap, Star
 } from "lucide-react";
-import logoImg from "@assets/Logo.png";
-import headerImg from "@assets/header.png";
-import searchImg from "@assets/searshing f.png";
-import parkImg from "@assets/parking f.png";
-import returnImg from "@assets/return to car f.png";
-import carsImg from "@assets/manage cars f.png";
-import devPhoto from "@assets/photo2025.jpg";
+
+// Public folder images
+const logoImg = "/Logo.png";
+const headerImg = "/header.png";
+const searchImg = "/searshing f.png";
+const parkImg = "/parking f.png";
+const returnImg = "/return to car f.png";
+const carsImg = "/manage cars f.png";
+const devPhoto = "/photo2025.jpg";
 
 function LinkedinIcon({ size = 16 }: { size?: number }) {
   return (
@@ -92,7 +94,7 @@ const content = {
       tag: "عن المطور",
       name: "محمد الحميد",
       nameEn: "Mohammed Alhumead",
-      role: "Software Engineer | UI/UX Designer & Frontend Developer",
+      role: "Software Engineer | UI/UX Designer",
       bio: "متخصص في هندسة البرمجيات، وشغوف بتصميم واجهة وتجربة المستخدم (UI/UX) . أركز على تحويل الأفكار المعقدة إلى منتجات رقمية تفاعلية، بتصميم عصري، وأداء عالٍ، وتجربة مستخدم استثنائية.",
       linkedin: "LinkedIn",
       behance: "Behance",
@@ -160,7 +162,7 @@ const content = {
       tag: "About the Developer",
       name: "Mohammed ALhumead",
       nameEn: "Mohammed ALhumead",
-      role: "Software Engineer | UI/UX Designer & Frontend Developer",
+      role: "Software Engineer | UI/UX Designer",
       bio: "A Software Engineering professional passionate about UI/UX design. I focus on transforming complex ideas into interactive digital products with modern designs, high performance, and an exceptional user experience.",
       linkedin: "LinkedIn",
       behance: "Behance",
