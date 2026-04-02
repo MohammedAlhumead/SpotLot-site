@@ -1,6 +1,10 @@
 {
   "name": "spotlot-landing",
   "version": "0.0.0",
+  "engines": {
+    "node": "20.x",
+    "npm": "10.x"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
